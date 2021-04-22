@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+    <nav id="header">
+      <a href="/"> <div class="logo" id="header-logo">Backendless</div></a>
+      <div class="them-holder">
+        <div class="descktop">
+          <input
+            type="radio"
+            onclick="descTheme()"
+            value="light-theme"
+            name="them-choice"
+          />
+          <label for="light-theme">Light Theme</label>
+
+          <input
+            type="radio"
+            onclick="descTheme()"
+            value="dark-theme"
+            name="them-choice"
+          />
+          <label for="dark-theme">Dark Theme</label>
+
+          <input
+            type="radio"
+            onclick="descTheme()"
+            value="backendless-theme"
+            name="them-choice"
+          />
+          <label for="backendless-theme">Backendless Theme</label>
+        </div>
+        <div class="tablet">
+          <button onclick="descTablet_light()">Light Theme</button>
+          <button onclick="descTablet_dark()">Dark Theme</button>
+          <button onclick="descTablet_backendless()">Backendless Theme</button>
+        </div>
+        <div class="mobile">
+          <select onchange="OnSelectionChange (this)">
+            <option value="Dark Theme">Dark Theme</option>
+            <option value="Light Theme">Light Theme</option>
+            <option value="Backendless Theme">Backendless Theme</option>
+          </select>
+        </div>
+      </div>
+    </nav>
+    <section class="backendless-gallery" id="gallery">
+      <h1 id="gallery-title">Backendless gallery</h1>
+      <div class="holder">
+        <div class="image-holder">
+          <div class="big-part"></div>
+          <div class="little-part">
+            <div class="small-image">
+              <a href="#ex1" rel="modal:open">modal</a>
+            </div>
+
+            <div class="small-image"></div>
+            <div class="small-image"></div>
+          </div>
+        </div>
+        <div class="image-line">
+          <div class="small-image"></div>
+          <div class="small-image"></div>
+          <div class="small-image"></div>
+          <div class="small-image"></div>
+        </div>
+        <div class="image-holder-reverse">
+          <div class="big-part"></div>
+          <div class="little-part">
+            <div class="small-image"></div>
+            <div class="small-image"></div>
+            <div class="small-image"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="ex1" class="modal">
+      <p>Это модаль</p>
+    </div>
+    <footer id="footer">
+      <div class="logo_tel">
+        <a class="logo" id="link" href="https://backendless.com/"
+          >Backendless.com</a
+        >
+        <a class="tel" id="tel" href="tel:555555555">555-555-555</a>
+      </div>
+      <div class="social-link">
+        <a href="https://www.instagram.com/?hl=ru">
+          <div class="link">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0)">
+                <path
+                  class="social-icon"
+                  d="M17.76 23.9934H6.24C2.79938 23.9934 0 21.1948 0 17.7551V6.23827C0 2.7986 2.79938 0 6.24 0H17.76C21.2006 0 24 2.7986 24 6.23827V17.7551C24 21.1948 21.2006 23.9934 17.76 23.9934ZM6.24 1.19967C3.32813 1.19967 1.2 3.3272 1.2 6.23827V17.7551C1.2 20.6662 3.32813 22.7937 6.24 22.7937H17.76C20.6719 22.7937 22.8 20.6662 22.8 17.7551V6.23827C22.8 3.3272 20.6719 1.19967 17.76 1.19967H6.24Z"
+                  fill="white"
+                />
+                <path
+                  class="social-icon"
+                  d="M12 18.2353C8.55938 18.2353 5.76001 15.4367 5.76001 11.9971C5.76001 8.55739 8.55938 5.75879 12 5.75879C15.4406 5.75879 18.24 8.55739 18.24 11.9971C18.24 15.4367 15.4406 18.2353 12 18.2353ZM12 7.67826C9.61876 7.67826 7.68001 9.61647 7.68001 11.9971C7.68001 14.3795 9.61876 16.3159 12 16.3159C14.3831 16.3159 16.32 14.3795 16.32 11.9971C16.32 9.61647 14.3831 7.67826 12 7.67826Z"
+                  fill="white"
+                />
+                <path
+                  class="social-icon"
+                  d="M18.7199 3.83887C17.9249 3.83887 17.2799 4.48369 17.2799 5.27847C17.2799 6.07325 17.9249 6.71807 18.7199 6.71807C19.5149 6.71807 20.1599 6.07325 20.1599 5.27847C20.1599 4.48369 19.5149 3.83887 18.7199 3.83887Z"
+                  fill="white"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0">
+                  <rect width="24" height="23.9934" fill="white" />
+                </clipPath>
+              </defs>
+            </svg></div
+        ></a>
+        <a href="https://www.youtube.com/">
+          <div class="link">
+            <svg
+              width="24"
+              height="17"
+              viewBox="0 0 24 17"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                class="social-icon"
+                d="M23.0645 1.44954C22.1982 0.419969 20.5987 0 17.5441 0H6.45569C3.33112 0 1.70454 0.44706 0.841471 1.54319C0 2.61192 0 4.18662 0 6.36603V10.52C0 14.7422 0.9984 16.8859 6.45569 16.8859H17.5442C20.1931 16.8859 21.661 16.5153 22.6106 15.6068C23.5845 14.675 24 13.1537 24 10.52V6.36603C24 4.06765 23.9349 2.48367 23.0645 1.44954ZM15.4081 9.0165L10.3729 11.6474C10.2603 11.7062 10.1372 11.7354 10.0143 11.7354C9.87507 11.7354 9.73618 11.6979 9.61316 11.6235C9.38152 11.4831 9.24008 11.2321 9.24008 10.9614V5.71649C9.24008 5.44622 9.38113 5.19544 9.61231 5.05504C9.84356 4.91463 10.1312 4.90504 10.3711 5.02965L15.4063 7.64359C15.6625 7.77656 15.8234 8.04096 15.8237 8.32942C15.8241 8.61812 15.6639 8.88291 15.4081 9.0165Z"
+                fill="white"
+              />
+            </svg></div
+        ></a>
+        <a href="https://twitter.com/?lang=ru">
+          <div class="link">
+            <svg
+              height="20pt"
+              viewBox="0 0 512 512"
+              width="32pt"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                class="social-icon"
+                fill="white"
+                d="m256 0c-141.363281 0-256 114.636719-256 256s114.636719 256 256 256 256-114.636719 256-256-114.636719-256-256-256zm116.886719 199.601562c.113281 2.519532.167969 5.050782.167969 7.59375 0 77.644532-59.101563 167.179688-167.183594 167.183594h.003906-.003906c-33.183594 0-64.0625-9.726562-90.066406-26.394531 4.597656.542969 9.277343.8125 14.015624.8125 27.53125 0 52.867188-9.390625 72.980469-25.152344-25.722656-.476562-47.410156-17.464843-54.894531-40.8125 3.582031.6875 7.265625 1.0625 11.042969 1.0625 5.363281 0 10.558593-.722656 15.496093-2.070312-26.886718-5.382813-47.140624-29.144531-47.140624-57.597657 0-.265624 0-.503906.007812-.75 7.917969 4.402344 16.972656 7.050782 26.613281 7.347657-15.777343-10.527344-26.148437-28.523438-26.148437-48.910157 0-10.765624 2.910156-20.851562 7.957031-29.535156 28.976563 35.554688 72.28125 58.9375 121.117187 61.394532-1.007812-4.304688-1.527343-8.789063-1.527343-13.398438 0-32.4375 26.316406-58.753906 58.765625-58.753906 16.902344 0 32.167968 7.144531 42.890625 18.566406 13.386719-2.640625 25.957031-7.53125 37.3125-14.261719-4.394531 13.714844-13.707031 25.222657-25.839844 32.5 11.886719-1.421875 23.214844-4.574219 33.742187-9.253906-7.863281 11.785156-17.835937 22.136719-29.308593 30.429687zm0 0"
+              />
+            </svg></div
+        ></a>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"
+    />
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
